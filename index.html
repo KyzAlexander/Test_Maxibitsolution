@@ -136,16 +136,14 @@ img {-ms-interpolation-mode: bicubic;}
         .columns {
           width: 100% !important;
         }
-
-        .column {
-          display: none !important;
-          width: 100% !important;
+        /* Удалил "display: none !important", "width: 100% !important" и добавил "max-width: 250px" чтобы контент выглядел нормально на мобилке  */
+        .column {          
+          max-width: 250px;         
           padding-left: 0 !important;
           padding-right: 0 !important;
           margin-left: 0 !important;
-          margin-right: 0 !important;
-        }
-
+          margin-right: 0 !important;          
+        }        
         .social-icon-column {
           display: inline-block !important;
         }
@@ -221,8 +219,8 @@ img {-ms-interpolation-mode: bicubic;}
                                                 <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;"
                                                   valign="top" align="center">
                                                   <!-- поправил ссылку на картинку (была некорректной) ------------------------------------------ -->
-                                                  <img class="max-width" border="0"
-                                                    style="display:flex; flex-direction: column; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;"
+                                                  <!-- удалил style и все его свойства для img ---------------- -->
+                                                  <img class="max-width" border="0"                                                    
                                                     width="120"
                                                     src="http://design-assets.adobeprojectm.com/content/download/express/public/urn:aaid:sc:VA6C2:ec792084-6a4a-44f3-8096-baf535812256/component?assetType=TEMPLATE&etag=105c59c16b79915f24ecb871fa9fda4d&revision=0&component_id=50e005e3-6397-4349-aa46-382a6ecc6944"
                                                     height="100" />
@@ -246,8 +244,8 @@ img {-ms-interpolation-mode: bicubic;}
                                                 <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;"
                                                   valign="top" align="center">
                                                   <!-- поправил ссылку на картинку (была некорректной) ------------------------------------------ -->
-                                                  <img class="max-width" border="0"
-                                                    style="display:flex; flex-direction: column; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;"
+                                                  <!-- удалил style и все его свойства для img ---------------- -->
+                                                  <img class="max-width" border="0"                                                    
                                                     width="374"
                                                     src="http://24ai.tech/ru/wp-content/uploads/sites/4/2023/10/00_hero_sgenerirovat-fon.png"
                                                     height="336" />
@@ -396,7 +394,7 @@ img {-ms-interpolation-mode: bicubic;}
                                             style="table-layout: fixed;">
                                             <tbody>
                                               <tr>
-                                                <!-- сделал text-align: center ------------------------  -->
+                                                <!-- сделал text-align: center ------------------------  -->                                                 
                                                 <td
                                                   style="padding:18px 0px 18px 0px; line-height:22px; text-align:center;"
                                                   height="100%" valign="top">
